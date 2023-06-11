@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LABRADDOM23.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="PlaceholderColor" Value="LightGray" />
+                <Setter Property="BackgroundColor" Value="CadetBlue" />
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="SteelBlue" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout BackgroundColor="CadetBlue">
+
+
+        <Entry x:Name="nombre" Placeholder="Ingrese su nombre" Keyboard="Text" />
+
+        <Entry x:Name="apellido" Placeholder="Ingrese su apellido" Keyboard="Text" />
+
+        <Entry x:Name="telefono" Placeholder="Ingrese su telefono" Keyboard="Numeric"/>
+
+        <Button x:Name="btnproceso" Text="Procesar" Clicked="btnproceso_Clicked" />
+
+
+    </StackLayout>
+
+</ContentPage>

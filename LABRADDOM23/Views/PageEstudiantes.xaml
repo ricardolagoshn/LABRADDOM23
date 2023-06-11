@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LABRADDOM23.Views.PageEstudiantes">
+
+   
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="Nombres" />
+            <Entry x:Name="nombres" Placeholder="Ingrese su nombres" />
+
+            <Label Text="Apellidos" />
+            <Entry x:Name="apellidos" Placeholder="Ingrese su apellidos" />
+
+            <DatePicker x:Name="fecha"/>
+
+            <Picker x:Name="id_carrera" Title="Seleccione una carrera ">
+                <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Ingenieria Informatica</x:String>
+                        <x:String>Medicina</x:String>
+                        <x:String>Arquitectura</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Entry x:Name="telefono" Placeholder="Ingrese su telefono" Keyboard="Telephone" />
+
+            <Button x:Name="btningresar"  Text="Agregar Estudiante" Clicked="btningresar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
