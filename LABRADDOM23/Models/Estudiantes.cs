@@ -19,6 +19,7 @@ namespace LABRADDOM23.Models
         [NotNull]
         public DateTime fechanac { get; set; }
 
+
         [NotNull]
         public string id_carrera { get; set; }
 
