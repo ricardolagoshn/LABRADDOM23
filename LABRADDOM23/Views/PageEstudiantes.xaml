@@ -6,7 +6,11 @@
    
     <ContentPage.Content>
         <StackLayout>
-            
+
+            <Image x:Name="foto" WidthRequest="100" HeightRequest="200" />
+
+            <Button x:Name="btnfoto" Text="Capturar imagen" Clicked="btnfoto_Clicked" />
+
             <Label Text="Nombres" />
             <Entry x:Name="nombres" Placeholder="Ingrese su nombres" />
 

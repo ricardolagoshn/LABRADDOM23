@@ -37,7 +37,7 @@ namespace LABRADDOM23
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Views.PageEstudiantes());
+            MainPage = new NavigationPage(new Views.PageInitial());
         }
 
         protected override void OnStart()

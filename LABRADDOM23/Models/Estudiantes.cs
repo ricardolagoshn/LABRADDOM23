@@ -25,5 +25,7 @@ namespace LABRADDOM23.Models
 
         [NotNull, Unique]
         public string telefono { get; set; }
+
+        public byte[] foto { get; set; }
     }
 }

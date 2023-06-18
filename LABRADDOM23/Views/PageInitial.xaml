@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LABRADDOM23.Views.PageInitial"
+             xmlns:conver="clr-namespace:LABRADDOM23.Controllers">
+
+    <ContentPage.Resources>
+        <conver:ByteArrayImage x:Key="Byarray" />
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Agregar Estudiante" Clicked="ToolbarItem_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+
+        <CollectionView x:Name="listestudiantes">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2"
+                       Source="{Binding foto, Converter={StaticResource Byarray}}"
+                       Aspect="AspectFill"
+                       HeightRequest="60"
+                       WidthRequest="60" />
+                        <Label Grid.Column="1"
+                       Text="{Binding nombres}"
+                       FontAttributes="Bold" />
+                        <Label Grid.Row="1"
+                       Grid.Column="1"
+                       Text="{Binding apellidos}"
+                       FontAttributes="Italic"
+                       VerticalOptions="End" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+
+    </ContentPage.Content>
+</ContentPage>
