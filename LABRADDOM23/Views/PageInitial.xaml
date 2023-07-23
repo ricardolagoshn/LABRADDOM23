@@ -10,8 +10,11 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Agregar Estudiante" Clicked="ToolbarItem_Clicked"></ToolbarItem>
+        <ToolbarItem Text="Crear Alumn RestApi" Clicked="ToolbarItem_Clicked_1"></ToolbarItem>
     </ContentPage.ToolbarItems>
+
     
+
     <ContentPage.Content>
 
         <CollectionView x:Name="listestudiantes">

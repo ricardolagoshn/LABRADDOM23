@@ -29,5 +29,11 @@ namespace LABRADDOM23.Views
             var pageestu = new Views.PageEstudiantes();
             Navigation.PushAsync(pageestu);
         }
+
+        private void ToolbarItem_Clicked_1(object sender, EventArgs e)
+        {
+            var pageestu = new Views.PageCreateAlumn();
+            Navigation.PushAsync(pageestu);
+        }
     }
 }

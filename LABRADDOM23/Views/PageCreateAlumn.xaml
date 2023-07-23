@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LABRADDOM23.Views.PageCreateAlumn">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image x:Name="foto" WidthRequest="100" HeightRequest="200" />
+
+            <Button x:Name="btnfoto" Text="Capturar imagen" Clicked="btnfoto_Clicked" />
+
+            <Label Text="Nombres" />
+            <Entry x:Name="nombres" Placeholder="Ingrese su nombres" />
+
+            <Label Text="Apellidos" />
+            <Entry x:Name="apellidos" Placeholder="Ingrese su apellidos" />
+
+            <Label Text="Direccion" />
+            <Entry x:Name="direccion" Placeholder="Ingrese su direccion" />
+
+            <Label Text="Telefono" />
+            <Entry x:Name="telefono" Placeholder="Ingrese su telefono" Keyboard="Telephone" />
+
+            <Button x:Name="btningresar"  Text="Agregar Estudiante" Clicked="btningresar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
